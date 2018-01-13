@@ -3,9 +3,9 @@
   "version": "0.0.1",
   "private": true,
   "scripts": {
-    "start": "node -e \"console.log('open browser at http://localhost:8088/vr/\\n\\n');\" && node node_modules/react-native/local-cli/cli.js start --port=8088",
+    "start": "node -e \"console.log('open browser at http://localhost:8088/vr/\\n\\n');\" && npm run open && node node_modules/react-native/local-cli/cli.js start --port=8088 ",
     "bundle": "node node_modules/react-vr/scripts/bundle.js",
-    "open": "node -e \"require('xopen')('http://localhost:8081/vr/')\"",
+    "open": "node -e \"require('xopen')('http://localhost:8088/vr/?hotreload')\"",
     "devtools": "react-devtools",
     "test": "jest",
     "build": "yarn bundle && createBuild.bat"
