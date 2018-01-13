@@ -1,18 +1,25 @@
 <html>
+
   <head>
     <title>Aarshad VR</title>
-    <style>body { margin: 0; }</style>
+    <style>body {margin: 0;}
+    </style>
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
   </head>
+
   <body>
+    <!-- <script src='https://cdn.jsdelivr.net/npm/webvr-polyfill@latest/build/webvr-polyfill.js'></script> -->
     <script src="./client.bundle.js?platform=vr"></script>
     <script>
       // Initialize the React VR application
       ReactVR.init(
         './index.bundle.js?platform=vr',
-        document.body
+        document.body,
+        {
+
+        }
       );
     </script>
   </body>
-</html>
 
+</html>
